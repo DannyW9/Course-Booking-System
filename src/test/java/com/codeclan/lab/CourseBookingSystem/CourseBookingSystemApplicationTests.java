@@ -1,5 +1,6 @@
 package com.codeclan.lab.CourseBookingSystem;
 
+import com.codeclan.lab.CourseBookingSystem.models.Booking;
 import com.codeclan.lab.CourseBookingSystem.models.Course;
 import com.codeclan.lab.CourseBookingSystem.models.Customer;
 import com.codeclan.lab.CourseBookingSystem.repositories.BookingRepository.BookingRepository;
@@ -48,5 +49,11 @@ public class CourseBookingSystemApplicationTests {
 	public void canFindAllCustomersForACourse() {
 		List<Customer> found = customerRepository.findCustomerByBookingsCourseId(2L);
 		assertEquals(2,found.size());
+	}
+
+	@Test
+	public void canFindAllBookingsByDate() {
+		List<Booking> found = bookingRepository.findBookingByDate("16-06-2020");
+		assertEquals(2, found.size());
 	}
 }

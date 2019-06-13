@@ -44,22 +44,22 @@ public class DataLoader implements ApplicationRunner {
         Course course3 = new Course("Introduction to Python", "Glasgow", 3);
         courseRepository.save(course3);
 
-        Booking booking1 = new Booking("01/01/2020", scott, course1);
+        Booking booking1 = new Booking("01-01-2020", scott, course1);
         bookingRepository.save(booking1);
 
-        Booking booking2 = new Booking("01/01/2020", danny, course1);
+        Booking booking2 = new Booking("01-01-2020", danny, course1);
         bookingRepository.save(booking2);
 
-        Booking booking3 = new Booking("01/01/2020", calum, course1);
+        Booking booking3 = new Booking("01-01-2020", calum, course1);
         bookingRepository.save(booking3);
 
-        Booking booking4 = new Booking("16/06/2020", danny, course2);
+        Booking booking4 = new Booking("16-06-2020", danny, course2);
         bookingRepository.save(booking4);
 
-        Booking booking5 = new Booking("16/06/2020", calum, course2);
+        Booking booking5 = new Booking("16-06-2020", calum, course2);
         bookingRepository.save(booking5);
 
-        Booking booking6 = new Booking("22/03/2020", scott, course3);
+        Booking booking6 = new Booking("22-03-2020", scott, course3);
         bookingRepository.save(booking6);
 
 
