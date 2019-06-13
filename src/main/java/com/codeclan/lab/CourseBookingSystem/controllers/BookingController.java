@@ -1,7 +1,6 @@
 package com.codeclan.lab.CourseBookingSystem.controllers;
 
 import com.codeclan.lab.CourseBookingSystem.models.Booking;
-import com.codeclan.lab.CourseBookingSystem.models.Customer;
 import com.codeclan.lab.CourseBookingSystem.repositories.BookingRepository.BookingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
